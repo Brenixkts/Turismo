@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo{
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+
+a{
+    text-decoration: none ;
+    transition: 0.3s;
+    color: #ffff;
+    padding: 15px;
+    font-size: large;
+}
+
+a:hover{
+    opacity: 0.8;
+    background-color: rgb(255, 255, 255);
+    color: blueviolet;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 7vh;
+}
+
+.lista{
+    list-style: none;
+    display: flex;
+}
+
+.lista li{
+    letter-spacing: 3px;
+    margin-left: 35px;
+}
+
+.menu-mobile div{
+    width: 32px;
+    height: 2px;
+    background-color: blueviolet;
+    margin: 8px;
+    transition: 0.3s;
+}
+.menu-mobile{
+    display: none;
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+}
+
+@media (max-width:999px){
+    
+    body{
+        overflow-x: hidden;
+    }
+    
+    .lista{
+        position: absolute;
+        top: 7vh;
+        right: 0;
+        width: 30vw;
+        height: 92vh;
+        background-color: rgb(48, 46, 46);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .lista li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .lista a{
+        color: blueviolet;
+        padding: 60px;
+    }
+}
+
+.lista.active{
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.menu-mobile.active .linha1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+.menu-mobile.active .linha2 {
+    opacity: 0;
+}
+.menu-mobile.active .linha3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+body{
+    background-image: url(/imagens/Cachoeira_do_Formiga_no_Jalapão.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    background-color: rgb(245, 250, 250);
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+}
+
+.container .content{
+    display: none;
+    margin-top: 20px;
+}
+
+.container .content.contentPortugues{
+    display: block;
+}
+.check:checked ~  .content.contentPortugues{
+    display:none;
+}
+
+.check:checked ~ .content.contentIngles{
+    display: block;
+}  
+.br{
+    color: #333;
+}
+
+.in{
+    color: #00a1ff;
+}
+
+/* imagens */
+
+.Imagens{
+    width: 70%;
+}
