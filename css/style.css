@@ -11,7 +11,7 @@
     font-size: 23px;
     text-transform: uppercase;
     letter-spacing: 4px;
-
+        
 }
 
 
@@ -28,6 +28,7 @@ a:hover{
     background-color: rgb(255, 255, 255);
     color: blueviolet;
 }
+
 
 nav{
     display: flex;
@@ -164,4 +165,9 @@ body{
 
 .Imagens{
     width: 70%;
+    box-shadow: 10px 10px 24px -15px rgba(0,0,0,0.75);
+}
+
+p{
+    text-align: justify;
 }
