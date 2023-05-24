@@ -122,7 +122,7 @@ header{
 }
 
 body{
-    background-image: url(/imagens/Cachoeira_do_Formiga_no_Jalapão.jpg);
+    background-image: url(../imagens/Cachoeira_do_Formiga_no_Jalapão.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
