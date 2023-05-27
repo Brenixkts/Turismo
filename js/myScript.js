@@ -46,3 +46,16 @@ const mobilenavbar = new MobileNavbar(
     ".lista li"
 )
 mobilenavbar.init()
+
+var textElement = document.getElementById('text');
+var textSize = 16;
+
+function increaseText() {
+  textSize += 2;
+  textElement.style.fontSize = textSize + 'px';
+}
+
+function decreaseText() {
+  textSize -= 2;
+  textElement.style.fontSize = textSize + 'px';
+}
